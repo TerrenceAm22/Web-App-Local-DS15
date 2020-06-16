@@ -1,12 +1,12 @@
 from flask import Blueprint
 
-tweets_users = Blueprint("tweets_users", __name__)
+tweet_routes = Blueprint("tweet_routes", __name__)
 
-@tweets_users.route("/")
+@tweet_routes.route("/")
 def index():
     x = 2 + 2
     return f"Hello World! {x}"
 
-@tweets_users.route("/about")
+@tweet_routes.route("/about")
 def about():
     return "About me"
